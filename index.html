@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>До ЗПшки</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main
+      class="widget"
+      id="widget"
+      role="button"
+      tabindex="0"
+      aria-live="polite"
+      aria-pressed="false"
+      aria-label="Показать дату ближайшей ЗПшки"
+    >
+      <div class="card">
+        <section class="face face-front" aria-label="Сколько дней до ЗПшки">
+          <p class="topline">
+            <span class="mark" aria-hidden="true"></span>
+            <span id="status">Считаем</span>
+          </p>
+
+          <h1 class="count">
+            <span id="count">...</span>
+            <span id="unit"></span>
+          </h1>
+
+          <p class="phrase" id="phrase">Ждём ЗПшку</p>
+        </section>
+
+        <section class="face face-back" aria-label="Дата ближайшей ЗПшки" aria-hidden="true">
+          <p class="back-kicker">Ближайшая ЗП</p>
+          <p class="date-label" id="date-label">...</p>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
